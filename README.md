@@ -33,8 +33,14 @@ pip install -e .
 ### 2. Run an Experiment
 Use the CLI to generate OOS forecasts:
 ```bash
-python -m at_risk --horizons 3 6 12 --specific-sets Deter_States
+python -m at_risk --horizons 3 6 12 --lags 3 6 12 --specific-sets Deter_States
 ```
+Included flags:
+```--horizons```: Set forecasting horizon.
+```--lags```: Add specific lags.
+```--rerun-all```: Regenerate all results from scratch and overwrite existing results files.
+```--specific-sets```: Rerun the forecasting loop for a specific predictor set.
+```--use-subset```: Run the predictor set specifications with the parsimonious set identified in the paper.
 
 ### 3. Generate Figures
 Open `notebooks/Analysis.ipynb` to view performance tables and generate plots.
