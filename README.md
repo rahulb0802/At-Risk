@@ -35,7 +35,7 @@ Use the CLI to generate OOS forecasts:
 ```bash
 python -m at_risk --horizons 3 6 12 --lags 3 6 12 --specific-sets Deter_States
 ```
-Included flags:
+Included flags: <br>
 ```--horizons```: Set forecasting horizon. <br>
 ```--lags```: Add specific lags. <br>
 ```--rerun-all```: Regenerate all results from scratch and overwrite existing results files. <br>
