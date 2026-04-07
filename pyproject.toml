@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "at_risk"
+version = "0.1.0"
+description = "At-Risk Transformation Implementation"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "xgboost",
+    "joblib",
+    "tqdm",
+    "matplotlib",
+    "seaborn",
+    "scipy"
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["at_risk"]
